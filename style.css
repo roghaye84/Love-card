@@ -1,0 +1,67 @@
+ body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff0f5;
+    }
+
+    .box {
+      width: 300px;
+      height: 400px;
+      position: relative;
+      box-shadow: 0 0 40px rgba(255, 182, 193, 0.4);
+      border-radius: 15px;
+      background: linear-gradient(145deg, #ffe6eb, #fff);
+    }
+
+    .box > .folded-Ribbon {
+      position: absolute;
+      inset: 30px -11px auto auto;
+      padding: 5px 30px 20px 30px;
+      clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 76%,
+        94% 100%,
+        94% 77%,
+        0 74%,
+        10% 40%
+      );
+      background: linear-gradient(90deg, #ff8fab, #ffb6c1);
+      box-shadow: 0 -10px 0 inset #0003;
+    }
+
+    .box > .folded-Ribbon > span {
+      font-family: cursive;
+      color: white;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .box .content {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: "Great Vibes", cursive;
+      font-size: 2rem;
+      color: #d63384;
+      text-shadow: 0 0 10px rgba(255, 182, 193, 0.5);
+    }
+    footer {
+         position: fixed;
+         bottom: 10px;
+         width: 100%;
+         text-align: center;
+     }
+
+     .author {
+        font-size: 0.9rem;
+        color:#ff8fab;
+         font-family: sans-serif;
+     }
